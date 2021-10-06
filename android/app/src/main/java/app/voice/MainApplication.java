@@ -20,6 +20,8 @@ import org.unimodules.core.interfaces.Package;
 import org.unimodules.core.interfaces.SingletonModule;
 import expo.modules.updates.UpdatesController;
 
+import com.lufinkey.react.eventemitter.RNEventEmitterPackage;
+
 import com.facebook.react.bridge.JSIModulePackage;
 import com.swmansion.reanimated.ReanimatedJSIModulePackage;
 
@@ -43,7 +45,6 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       List<ReactPackage> packages = new PackageList(this).getPackages();
       packages.add(new ModuleRegistryAdapter(mModuleRegistryProvider));
-
 
       return packages;
     }
